@@ -126,7 +126,7 @@ export default function Projects() {
                         </a>
                       </h2>
                       <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                      CrowdWork platform was developed by FPT Software Innovation with the mission of creating a strong community of freelancers everywhere in the world, regardless of time and distance in many different fields such as data entry.
+                      CrowdWork platform was developed with the mission of creating a strong community of freelancers everywhere in the world, regardless of time and distance in many different fields such as data entry.
                       </p>
                       <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                         <svg
