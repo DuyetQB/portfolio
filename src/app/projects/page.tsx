@@ -26,7 +26,7 @@ export default function Projects() {
                     role="list"
                     className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
                   >
-                    <li className="group relative flex flex-col items-start">
+                    {/* <li className="group relative flex flex-col items-start">
                       <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                         
                         <img
@@ -65,7 +65,7 @@ export default function Projects() {
                         </svg>
                         <span className="ml-2">phimmoi.app</span>
                       </p>
-                    </li>
+                    </li> */}
                     <li className="group relative flex flex-col items-start">
                       <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                         <img
