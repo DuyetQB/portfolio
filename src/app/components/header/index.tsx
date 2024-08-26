@@ -1,6 +1,8 @@
-import React from "react";
+"use client"
+import React, { useContext } from "react";
 import Link from "next/link";
 import Avatar from "../avatar";
+import { ThemeContext } from "@/app/Theme";
 
 type HeaderProps = {
   isAvatarHidden?: boolean;
@@ -8,6 +10,8 @@ type HeaderProps = {
 
 export default function Header(props: HeaderProps) {
   const { isAvatarHidden } = props;
+
+  const { toggle , dark } = useContext(ThemeContext);
 
   return (
     <header className="sticky top-0 z-10 h-16 pt-6 mx-auto max-w-2xl lg:max-w-5xl">
@@ -27,13 +31,6 @@ export default function Header(props: HeaderProps) {
               </Link>
             </li>
             <li>
-              <Link href="/articles" legacyBehavior>
-                <a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400">
-                  Articles
-                </a>
-              </Link>
-            </li>
-            <li>
               <Link href="/projects" legacyBehavior>
                 <a className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400 active:bg-amber-500">
                   Projects
@@ -48,7 +45,23 @@ export default function Header(props: HeaderProps) {
               type="button"
               aria-label="Switch to dark theme"
               className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+            onClick={toggle}
+            
             >
+
+            
+               <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
+              >
+                <path
+                  d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg> 
               <svg
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
@@ -63,18 +76,7 @@ export default function Header(props: HeaderProps) {
                   fill="none"
                 ></path>
               </svg>
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
-              >
-                <path
-                  d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
+              
             </button>
           </div>
         </div>
