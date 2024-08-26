@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/layouts";
+import { projects } from "../data/project";
 
 export default function Projects() {
   return (
     <Layout>
-      <main className="flex-auto h-[100vh]">
+      <main className="flex-auto">
         <div className="sm:px-8 mt-16 sm:mt-32">
           <div className="mx-auto w-full max-w-7xl lg:px-8">
             <div className="relative px-4 sm:px-8 lg:px-12">
@@ -66,6 +67,9 @@ export default function Projects() {
                         <span className="ml-2">phimmoi.app</span>
                       </p>
                     </li> */}
+
+                    {projects.map((rc)=>(
+
                     <li className="group relative flex flex-col items-start">
                       <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                         <img
@@ -82,13 +86,13 @@ export default function Projects() {
                       </div>
                       <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                         <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50" />
-                        <a href="https://expo.dev/accounts/duyetpro/projects/Frontend/builds/98666b7b-b04f-4682-ac35-2460e852169f"  target="_blank">
+                        <a href={rc.link}  target="_blank">
                           <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
-                          <span className="relative z-10">Driving theory UK</span>
+                          <span className="relative z-10">{rc.name}</span>
                         </a>
                       </h2>
                       <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                      Creating technologies that empower regular people to users with a comprehensive and user-friendly platform to enhance their knowledge and skills in preparation for the theory test.
+                     {rc.description}
                       </p>
                       <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                         <svg
@@ -101,10 +105,13 @@ export default function Projects() {
                             fill="currentColor"
                           />
                         </svg>
-                        <span className="ml-2">AppStore</span>
+                        <span className="ml-2">
+                          {rc.type}
+                        </span>
                       </p>
                     </li>
-                    <li className="group relative flex flex-col items-start">
+                    ))}
+                    {/* <li className="group relative flex flex-col items-start">
                       <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                         <img
                           alt=""
@@ -141,7 +148,7 @@ export default function Projects() {
                         </svg>
                         <span className="ml-2">CrowdWork.com</span>
                       </p>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

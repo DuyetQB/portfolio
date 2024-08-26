@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WorkItem() {
   return (
-    <div className="space-y-10 lg:pl-16 xl:pl-24">
+    <div className="space-y-10 lg:pl-16 xl:pl-24 my-2">
       <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mt-24">
         <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
           <svg
@@ -187,7 +187,7 @@ export default function WorkItem() {
                 </defs>
               </svg>
             </div>
-            <dl className="flex flex-auto flex-wrap gap-x-2">
+            <dl className="flex flex-auto flex-wrap gap-x-2 my-2">
               <dt className="sr-only">Company</dt>
               <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 FPT Software
@@ -208,7 +208,7 @@ export default function WorkItem() {
             </dl>
           </li>
         </ol>
-        <a
+        {/* <a
           className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
           href="https://drive-data-export.usercontent.google.com/download/1d1j80rep5nbaj1lnivdnov64tsoqfv8/e70tuthujckb22091bojad7pdi0dm43r/1711782000000/0ba889b2-8447-46a1-bbdb-1967e86f5e85/100558809647941821710/ADt3v-ObtvM9Z0sRtfvmzHDIIbdj6mBcPLDgcj6-1x2CshmQyT-Mp8i-H699blsouTBQMM9Dpx6zku1RWWwGsLlSCyk5xBxQzmI4CG6ObsGsZYJt3CFwj-BWBSVp_2QaTBclMvl9QdWogdTPEeOAFxOZt1j5bOpNxBbX-TrfOAQCPPg8NhFSaIHFyss_WrEBG8x81nx0l-xf0ZiCwb6PwY-M8zfBS3j832NKFfpvGQ-EF2fyIwB3OE6cn4lCdv0sG1ZN5peosPRr-PqjwVwWLsr6yfA5I5V2FTytFp9X3zxB3VeKrSp1U3PC0ty7M9tMaTUEWDZ11scjoruJaPgIu0BUvgOuiVbOSw==?j=0ba889b2-8447-46a1-bbdb-1967e86f5e85&user=17661111318&i=0"
           download
@@ -227,7 +227,7 @@ export default function WorkItem() {
               strokeLinejoin="round"
             />
           </svg>
-        </a>
+        </a> */}
       </div>
     </div>
   );

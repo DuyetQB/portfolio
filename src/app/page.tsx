@@ -72,11 +72,11 @@ export default function Home() {
 
           {/*  */}
           <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-            <div className="flex flex-col gap-16 mt-24">
-              {[1, 2, 3].map((index) => (
+           <div className="flex flex-col gap-16 mt-24"> 
+              {/* {[1, 2, 3].map((index) => (
                 <CardItem key={index} />
-              ))}
-            </div>
+              ))} */}
+            </div> 
             <WorkItem />
           </div>
         </div>
