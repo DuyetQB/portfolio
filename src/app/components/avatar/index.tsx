@@ -14,11 +14,11 @@ export default function Avatar(props:AvatarProps) {
       <Link href="/" legacyBehavior>
         <a>
           <Image
-            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert rounded-full"
+            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert rounded-full object-cover"
             src="/assets/images/photo-me.png"
             alt="image me"
             layout="fill"
-            objectFit="cover"
+            // objectFit="cover"
             priority
           />
         </a>
