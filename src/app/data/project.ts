@@ -42,7 +42,7 @@ export const projects = [
     {
         id:6,
         name:'React Server',
-        description:'React server is a website build and using only Reactjs. It is a difficult technique. Dynamic metatag serves SEO. Only people with many years of experience and deep understanding of SPA and SSR rendering mechanism can do it.',
+        description:'React server is a website build and using only Reactjs. It is a difficult technique. Dynamic metatag serves SEO. With many years of experience research and failed. Then until now I build it success. I have to deep understanding of SPA and SSR rendering mechanism then I can do it.',
         image:'',
         type:'Website',
         link:'https://react-server-lqq0.onrender.com/'
