@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:px-8 ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
       <Layout isAvatarHidden>
-        <div className="mx-auto w-full max-w-7xl lg:px-8 pt-24 md:pt-28">
+        <div className="mx-auto w-full max-w-7xl lg:px-8 pt-24 md:pt-28 px-2">
           <div className="flex flex-col gap-[30px]">
            <Avatar />
             <div className="max-w-2xl flex flex-col gap-[30px]">
-              <h2 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              <h2 className="text-4xl font-bold tracking-tight">
                 Software developer, founder, and amateur filmmaker.
               </h2>
               <p>

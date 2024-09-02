@@ -59,7 +59,7 @@ export default function ThemeProvider({ children } : PropsWithChildren) {
 // styles
 const lightTheme = [
     "--foreground-rgb: 0, 0, 0",
-    "--background-start-rgb: 214, 219, 220",
+    "--background-start-rgb: 255, 255, 255",
     "--background-end-rgb: 255, 255, 255"
 ];
 
